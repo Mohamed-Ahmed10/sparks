@@ -1,4 +1,3 @@
-// src/lib/fonts.ts
 import { Gasoek_One, Sora, Space_Grotesk } from "next/font/google";
 
 export const gasoek = Gasoek_One({
