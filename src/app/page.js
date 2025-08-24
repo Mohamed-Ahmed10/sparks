@@ -1,5 +1,7 @@
-export default function Home() {
+export default function PAge() {
   return (
-    <div className="text-2xl font-black font-sora">This is sparks</div>
+    <div className="text-2xl font-black font-sora">
+      This is home page
+    </div>
   );
 }
