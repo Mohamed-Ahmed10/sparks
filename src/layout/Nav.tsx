@@ -1,16 +1,18 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Nav() {
+    const t = useTranslations()
     const navItems = [
-        { href: "/", label: "Home" },
-        { href: "/portfolio", label: "Portfolio" },
-        { href: "/our-services", label: "Our services" },
-        { href: "/about-us", label: "About us" },
-        { href: "/contact-us", label: "Contact us" },
+        { href: "/", label: "home" },
+        { href: "/portfolio", label: "portfolio" },
+        { href: "/our-services", label: "our_services" },
+        { href: "/about-us", label: "about_us" },
+        { href: "/contact-us", label: "contact_us" },
     ];
 
     const pathName = usePathname();
@@ -33,7 +35,7 @@ export default function Nav() {
                                 className={`px-3 py-2 rounded-full font-semibold transition-all duration-700 ease-in-out ${isActive ? "bg-[var(--main)] text-white shadow-md" : "text-white/70 hover:text-white"}
                 `}
                             >
-                                {item.label}
+                                {t(item.label)}
                             </Link>
                         </li>
                     );
