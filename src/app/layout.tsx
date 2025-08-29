@@ -1,4 +1,5 @@
 import DirectionContextProvider from "@/contexts/DirectionContextProvider";
+import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from "next-intl";
@@ -27,6 +28,7 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             <Header></Header>
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </body>
       </html>

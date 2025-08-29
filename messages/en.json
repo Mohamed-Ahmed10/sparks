@@ -4,5 +4,37 @@
     "our_services": "Our services",
     "about_us": "About us",
     "contact_us": "Contact us",
-    "git_in_touch": "Git in touch"
+    "git_in_touch": "Git in touch",
+    "not_found": "Not found",
+    "back_to_home": "Back to home",
+    "footer": {
+        "logoAlt": "Sparks logo",
+        "description": "Sparks is a creative studio that crafts powerful 2D and 3D animations, media content, and storytelling experiences that bring your ideas to life.",
+        "services": {
+            "title": "Services",
+            "items": {
+                "2d": "2D Animation",
+                "3d": "3D Animation",
+                "media": "Media Production",
+                "creative": "Creative Solutions",
+                "film": "Film Making Production"
+            }
+        },
+        "company": {
+            "title": "Company",
+            "items": {
+                "home": "Home",
+                "about": "About Us",
+                "services": "Our Services",
+                "portfolio": "Portfolio",
+                "contact": "Contact us"
+            }
+        },
+        "follow": {
+            "title": "Follow Us",
+            "phoneLabel": "Phone Number:",
+            "emailLabel": "E-Mail:"
+        },
+        "copyright": "© 2025 Sparks Studio. All rights reserved."
+    }
 }

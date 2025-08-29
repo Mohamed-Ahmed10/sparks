@@ -8,7 +8,7 @@ export default function Header() {
     // const t = useTranslations('common');
 
     useEffect(() => {
-        console.log(pathname);
+        console.log('Header : ' + pathname);
     }, [pathname]);
 
     return (

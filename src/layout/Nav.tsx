@@ -13,6 +13,8 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaBars } from "react-icons/fa";
+import { MdGTranslate } from "react-icons/md";
 
 export default function Nav() {
     const t = useTranslations()
@@ -29,7 +31,7 @@ export default function Nav() {
 
     return (
         <>
-            <div
+            <nav
                 className="w-5/6 m-auto gap-4 sticky top-[4.89%] bottom-[82.61%]
             bg-[rgba(252,252,252,0.25)] border border-[rgba(255,255,255,0.15)]
             shadow-[0px_10px_24px_rgba(255,255,255,0.25)]
@@ -53,23 +55,16 @@ export default function Nav() {
                     })}
                 </ul>
                 <div className="flex items-center gap-4">
-                    <Image
-                        src="/icons/language.svg"
-                        className="cursor-pointer"
-                        width={30}
-                        height={30}
-                        alt="Language"
-                        onClick={() => setLanguageAction(locale === 'en' ? 'ar' : 'en')}
-                    />
+                    <MdGTranslate className="text-white w-8 h-8 cursor-pointer" onClick={() => setLanguageAction(locale === 'en' ? 'ar' : 'en')} />
                     <Button variant="link" href="/git-in-touch">
                         {t('git_in_touch')}
                     </Button>
                 </div>
-            </div>
-            <div className="hidden max-lg:block">
+            </nav>
+            <nav className="hidden max-lg:block">
                 <Sheet>
                     <SheetTrigger>
-                        <Image src="/icons/bars.svg" width={40} height={40} alt="Icon" />
+                        <FaBars />
                     </SheetTrigger>
                     <SheetContent>
                         <SheetHeader>
@@ -95,14 +90,7 @@ export default function Nav() {
                                     })}
                                 </ul>
                                 <div className="flex justify-center gap-4">
-                                    <Image
-                                        src="/icons/language.svg"
-                                        className="cursor-pointer invert"
-                                        width={30}
-                                        height={30}
-                                        alt="Language"
-                                        onClick={() => setLanguageAction(locale === 'en' ? 'ar' : 'en')}
-                                    />
+                                    <MdGTranslate className="text-white w-8 h-8 cursor-pointer" onClick={() => setLanguageAction(locale === 'en' ? 'ar' : 'en')} />
                                     <Button variant="link" href="/git-in-touch">
                                         {t('git_in_touch')}
                                     </Button>
@@ -111,7 +99,7 @@ export default function Nav() {
                         </SheetHeader>
                     </SheetContent>
                 </Sheet>
-            </div>
+            </nav>
         </>
     );
 }
