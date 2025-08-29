@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
-        link: "hover:text-[var(--color-yellow)] rounded-full border-[1.5px] border-solid border-[var(--color-yellow)] shadow-[0px_0px_1px_var(--sds-size-depth-025)_#DBBA0640] text-[var(--color-white)] cursor-pointer bg-[var(--main)] text-white shadow-md",
+        link: "rounded-full hover:shadow-[0px_1px_20px_0px_#fff] text-[var(--color-white)] cursor-pointer bg-[var(--main)] text-white shadow-md",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
