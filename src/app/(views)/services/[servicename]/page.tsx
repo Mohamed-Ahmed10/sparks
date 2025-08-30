@@ -12,6 +12,6 @@ export default async function Page({
 
     if (!allowedServices.includes(servicename)) { notFound() }
     return (
-        <div>this is footer {servicename}</div>
+        <div>this  {servicename}</div>
     )
 }

@@ -1,17 +1,17 @@
+import { soraClass } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import Link from "next/link"
 import type * as React from "react"
-
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40xaria-invalid:border-destructive font-bold",
+  `whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40xaria-invalid:border-destructive font-bold ${soraClass}`,
   {
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         link: "rounded-full hover:shadow-[0px_1px_20px_0px_#fff] text-[var(--color-white)] cursor-pointer bg-[var(--main)] text-white shadow-md",
-        foldable: "relative after:absolute after:top-0 after:start-0 after:h-6 after:w-6 rounded-full bg-[var(--main)] hover:after:w-full transition-all"
+        foldable: "rounded-full bg-[var(--main)] hover:after:w-full transition-all w-10 hover:w-48 transition-all duration-300 ease-in-out font-bold text-center"
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

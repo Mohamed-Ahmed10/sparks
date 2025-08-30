@@ -1,4 +1,8 @@
 {
+    "not_found": "Not found",
+    "back_to_home": "Back to home",
+    "sparks": "Sparks",
+    "show_more": "Show more",
     "nav": {
         "home": "Home",
         "portfolio": "Portfolio",
@@ -7,13 +11,23 @@
         "contact_us": "Contact us",
         "git_in_touch": "Git in touch"
     },
-    "not_found": "Not found",
-    "back_to_home": "Back to home",
-    "sparks": "Sparks",
     "home": {
         "at": "At",
         "at_sparks_desc": "we don’t just animate – we ignite stories. We craft visual experiences that bring your ideas to life, frame by frame.",
-        "learn_more": "Learn more about us"
+        "learn_more": "Learn more about us",
+        "our_services": "Our Services",
+        "where_meet": "Where Art Meets Purpose",
+        "d_video": "D Video",
+        "2d_desc": "Let your brand’s story unfold in bold lines, fluid motion, and striking simplicity. Our 2D animation captures hearts and communicates clearly.",
+        "3d_desc": "Whether you're showcasing a product, building a world, or telling a story, our 3D animation team delivers visuals that feel real – and unforgettable.",
+        "production": " Production",
+        "media": "Media",
+        "media_desc": "Your vision, shot with precision. We handle every stage of media production to create stunning visuals that tell your story with clarity and style.",
+        "creative": "Creative",
+        "solutions": " Solutions",
+        "creative_desc": "From brainstorming to execution, our creative team builds solutions that solve real problems and connect with real audiences.",
+        "film": "Film",
+        "making": " Making"
     },
     "header": {
         "sparks": "Sparks",
