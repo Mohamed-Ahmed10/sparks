@@ -17,7 +17,7 @@ import { FaBars } from "react-icons/fa";
 import { MdGTranslate } from "react-icons/md";
 
 export default function Nav() {
-    const t = useTranslations()
+    const t = useTranslations('nav')
     const navItems = [
         { href: "/", label: "home" },
         { href: "/portfolio", label: "portfolio" },

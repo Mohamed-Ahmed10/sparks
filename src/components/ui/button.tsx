@@ -11,6 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         link: "rounded-full hover:shadow-[0px_1px_20px_0px_#fff] text-[var(--color-white)] cursor-pointer bg-[var(--main)] text-white shadow-md",
+        foldable: "relative after:absolute after:top-0 after:start-0 after:h-6 after:w-6 rounded-full bg-[var(--main)] hover:after:w-full transition-all"
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

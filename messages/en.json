@@ -1,12 +1,26 @@
 {
-    "home": "Home",
-    "portfolio": "Portfolio",
-    "our_services": "Our services",
-    "about_us": "About us",
-    "contact_us": "Contact us",
-    "git_in_touch": "Git in touch",
+    "nav": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "our_services": "Our services",
+        "about_us": "About us",
+        "contact_us": "Contact us",
+        "git_in_touch": "Git in touch"
+    },
     "not_found": "Not found",
     "back_to_home": "Back to home",
+    "sparks": "Sparks",
+    "home": {
+        "at": "At",
+        "at_sparks_desc": "we don’t just animate – we ignite stories. We craft visual experiences that bring your ideas to life, frame by frame.",
+        "learn_more": "Learn more about us"
+    },
+    "header": {
+        "sparks": "Sparks",
+        "motion": "motion",
+        "description": "Sparks is where your imaginative ideas take shape. We craft next-level 2D & 3D animations that light up your brand and set it in motion.",
+        "btn": "Start The Spark"
+    },
     "footer": {
         "logoAlt": "Sparks logo",
         "description": "Sparks is a creative studio that crafts powerful 2D and 3D animations, media content, and storytelling experiences that bring your ideas to life.",

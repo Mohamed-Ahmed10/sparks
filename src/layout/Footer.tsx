@@ -44,7 +44,7 @@ export default function Footer() {
                     </p>
                 </div>
                 <div>
-                    <h3 className="font-bold text-2xl mb-3">{t("services.title")}</h3>
+                    <h5 className="font-bold text-2xl mb-3">{t("services.title")}</h5>
                     <ul className="space-y-2 text-sm text-white">
                         <li><Link href="/services/2d-animation">{t("services.items.2d")}</Link></li>
                         <li><Link href="/services/3d-animation">{t("services.items.3d")}</Link></li>
@@ -54,7 +54,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h3 className="font-bold text-2xl mb-3">{t("company.title")}</h3>
+                    <h5 className="font-bold text-2xl mb-3">{t("company.title")}</h5>
                     <ul className="space-y-2 text-sm text-white">
                         <li><Link href="/">{t("company.items.home")}</Link></li>
                         <li><Link href="/about-us">{t("company.items.about")}</Link></li>
@@ -64,7 +64,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h3 className="font-bold text-2xl mb-3">{t("follow.title")}</h3>
+                    <h5 className="font-bold text-2xl mb-3">{t("follow.title")}</h5>
                     <div className="flex space-x-4 mb-6">
                         <FaFacebookF className="hover:text-white cursor-pointer" />
                         <FaVimeoV className="hover:text-white cursor-pointer" />

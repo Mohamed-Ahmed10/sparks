@@ -80,6 +80,7 @@
   --main: #e83030;
   --hover: #ff4c4c;
   --main-font: #ffffff;
+  --black-color: #141618;
   --second-font: #eeeaea;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -134,4 +135,15 @@
 
 .ltr {
   direction: ltr !important;
+}
+
+.text-gradient {
+  background: linear-gradient(180deg, #e83030 0%, #3d0404 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 100px;
+  font-weight: bold;
 }
