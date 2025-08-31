@@ -45,7 +45,7 @@ export default function Nav() {
                             <li key={i} className="relative">
                                 <Link
                                     href={item.href}
-                                    className={`px-3 py-2 rounded-full font-semibold transition-all duration-700 ease-in-out ${isActive ? "bg-[var(--main)] text-white shadow-md" : "text-white/70 hover:text-white"}
+                                    className={`px-3 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out ${isActive ? "bg-[var(--main)]/50 text-white shadow-md" : "text-white/70 hover:text-white"}
                                     `}
                                 >
                                     {t(item.label)}

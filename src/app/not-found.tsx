@@ -28,7 +28,7 @@ export default function NotFound() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.7, duration: 0.5 }}
                 >
-                    <Button href="/" variant="link" className='mt-6' size="lg">
+                    <Button href="/" variant="link" className='my-16 flex items-center justify-center' size="lg">
                         {t('back_to_home')}
                     </Button>
                 </MotionDiv>
