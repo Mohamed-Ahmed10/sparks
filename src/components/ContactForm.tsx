@@ -10,7 +10,6 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SelectGroup, SelectLabel } from "@radix-ui/react-select";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import Swal from 'sweetalert2';
 import { z } from "zod";
@@ -19,7 +18,6 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
 const ContactForm = () => {
     const t = useTranslations()
-    const router = useRouter();
 
     const formSchema = z.object({
         fullName: z.string().min(2, {
