@@ -17,7 +17,8 @@
         "learn_more": "Learn more about us",
         "our_services": "Our Services",
         "where_meet": "Where Art Meets Purpose",
-        "d_video": "D Video",
+        "2d_video": "2D Video",
+        "3d_video": "3D Video",
         "2d_desc": "Let your brand’s story unfold in bold lines, fluid motion, and striking simplicity. Our 2D animation captures hearts and communicates clearly.",
         "3d_desc": "Whether you're showcasing a product, building a world, or telling a story, our 3D animation team delivers visuals that feel real – and unforgettable.",
         "production": " Production",
@@ -27,7 +28,19 @@
         "solutions": " Solutions",
         "creative_desc": "From brainstorming to execution, our creative team builds solutions that solve real problems and connect with real audiences.",
         "film": "Film",
-        "making": " Making"
+        "making": " Making",
+        "frames_of_our": "Frames of Our ",
+        "work": "Work",
+        "our_work_desc": "Take a glimpse into our creative world — a curated collection of animations, visuals, and stories we've proudly brought to life. Each project reflects our passion, precision, and unique touch.",
+        "view_full_portfolio": "View Full Portfolio",
+        "we're": "We're ",
+        "crafting": "crafting ",
+        "visual_sparks": "visual sparks ",
+        "that_bring": "that bring ",
+        "stories": "stories ",
+        "to_life": "to life",
+        "we_driven_by_creative": " We Driven by Creative",
+        "partners": "Partners"
     },
     "header": {
         "sparks": "Sparks",
@@ -64,5 +77,25 @@
             "emailLabel": "E-Mail:"
         },
         "copyright": "© 2025 Sparks Studio. All rights reserved."
+    },
+    "form": {
+        "full_name": "Full Name",
+        "email": "E-mail",
+        "phone_number": "Phone Number",
+        "full_name_min": "Please enter your full name (at least 2 characters).",
+        "phone_min": "Phone number is too short.",
+        "phone_format": "Include the country code (e.g. +20xxxxxxxxxx).",
+        "invalid_email": "Enter a valid email address.",
+        "company_name_min": "Please enter a valid company name (at least 2 characters).",
+        "project_type": "Project type"
+    },
+    "contact_message": "Your message has been sent successfully!",
+    "submit": "Submit",
+    "project_types": {
+        "two_d_animation": "2D Animation",
+        "three_d_animation": "3D Animation",
+        "media_production": "Media Production",
+        "creative_solutions": "Creative Solutions",
+        "film_making_production": "Film Making & Production"
     }
 }

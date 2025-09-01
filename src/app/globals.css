@@ -84,6 +84,8 @@
   --second-font: #eeeaea;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
+
+  color: var(--black-color);
 }
 
 .dark {
