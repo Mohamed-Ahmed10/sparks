@@ -144,29 +144,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 1200px) {
-  :root {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 992px) {
-  :root {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  :root {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 576px) {
-  :root {
-    font-size: 10px;
-  }
-}
 
 @keyframes marquee {
   0% {
@@ -190,4 +167,10 @@
 }
 .animate-marquee-reverse {
   animation: marquee-reverse 10s linear infinite;
+}
+
+@layer {
+  input:-internal-autofill-selected {
+    background-color: transparent !important;
+  }
 }

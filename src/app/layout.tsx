@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: 'Sparks studios',
     description: "test description",
     icons: {
-      icon: '/logo.png',
+      icon: '/icon.svg',
     },
   };
 }

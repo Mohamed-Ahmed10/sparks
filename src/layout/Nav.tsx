@@ -76,7 +76,7 @@ export default function Nav() {
             <nav className="hidden max-lg:block z-50">
                 <Sheet>
                     <SheetTrigger>
-                        <FaBars width={100} height={100} />
+                        <FaBars className="w-8 h-8 text-white" />
                     </SheetTrigger>
                     <SheetContent>
                         <SheetHeader>

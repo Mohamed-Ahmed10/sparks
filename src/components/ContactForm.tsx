@@ -76,8 +76,8 @@ const ContactForm = () => {
             <div className="container mx-auto lg:p-6 !text-white">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                        <div className="grid md:grid-cols-2 gap-20 p-3 relative pb-40">
-                            <div className="flex flex-col gap-10 text-3xl font-bold me-16">
+                        <div className="grid md:grid-cols-2 gap-20 p-3 relative pb-24">
+                            <div className="flex flex-col gap-10 text-3xl font-bold lg:w-4/5">
                                 <FormField
                                     control={form.control}
                                     name="fullName"
@@ -145,19 +145,19 @@ const ContactForm = () => {
                                     type="submit"
                                     variant="link"
                                     size="lg"
-                                    className="justify-center"
+                                    className="justify-center w-full"
                                 >
                                     {common('submit')}
                                 </Button>
                             </div>
-                            <div>
+                            <div className="bg-[url('/images/contact_bg.webp')] bg-contain bg-no-repeat bg-center">
                                 <div className="w-1/2 mx-auto text-end">
                                     <div className="text-7xl">{t('contact')}</div>
                                     <div className="text-7xl relative after:absolute after:top-1/2 after:start-10 after:w-32 after:h-1 after:bg-white">{t('us')}</div>
                                 </div>
                                 <p className="mt-24 text-center">{t('description')}</p>
                             </div>
-                            <Image src="/images/character.webp" className="absolute bottom-0 left-2/5" width={180} height={200} alt="Character" />
+                            <Image src="/images/character.webp" className="absolute bottom-0 left-2/5" width={200} height={220} alt="Character" />
                         </div>
                     </form>
                 </Form>
