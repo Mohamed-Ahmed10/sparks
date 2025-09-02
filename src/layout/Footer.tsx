@@ -1,8 +1,10 @@
 "use client";
+import ContactForm from "@/components/ContactForm";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaFacebookF, FaLinkedinIn, FaVimeoV, FaYoutube } from "react-icons/fa";
 
 const randomPosition = () => ({
@@ -12,9 +14,13 @@ const randomPosition = () => ({
 
 export default function Footer() {
     const t = useTranslations("footer");
+    const pathname = usePathname()
 
     return (
         <footer className="relative bg-[var(--dark-red)] text-white px-8 py-12 overflow-hidden font-medium">
+            {pathname != '/contact-us'
+                && (<ContactForm />)
+            }
             <motion.div
                 className="absolute w-72 h-72 rounded-full bg-red-400/20 blur-3xl"
                 animate={randomPosition()}

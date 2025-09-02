@@ -1,9 +1,8 @@
-import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export default function PAge() {
+export default function Page() {
   const t = useTranslations('home')
   const common = useTranslations()
 
@@ -29,7 +28,7 @@ export default function PAge() {
   return (
     <>
       <div className="text-[var(--black-color)] container mx-auto lg:p-6">
-        <div className="grid grid-cols-2 my-8">
+        <div className="grid grid-cols-2 my-8 gap-16">
           <Image src="/images/home/at_sparks.webp" alt="At sparks" width={600} height={600} className="w-full" />
           <div className="flex justify-center flex-col">
             <h3 className="text-[3rem] font-bold">
@@ -37,7 +36,7 @@ export default function PAge() {
               <span className="text-[var(--main)]"> {common('sparks')}</span>
             </h3>
             <p className="mt-6 font-semibold text-[1.5rem] text-center">{t('at_sparks_desc')}</p>
-            <Button href="/about-us" className="mt-8" variant="foldable">{t('learn_more')}</Button>
+            <Button href="/about-us" className="mt-8 hover:w-40 ms-12" variant="foldable">{t('learn_more')}</Button>
           </div>
         </div>
       </div>
@@ -55,7 +54,7 @@ export default function PAge() {
           </h3>
           <p className="mt-6 font-semibold text-[1.5rem] text-center">{t('2d_desc')}</p>
           <div className="flex justify-center">
-            <Button href="/services/2d-animation" className="mt-8" variant="foldable">{common('show_more')}</Button>
+            <Button href="/services/2d-animation" className="mt-8 hover:w-32" variant="foldable">{common('show_more')}</Button>
           </div>
         </div>
       </div>
@@ -90,7 +89,7 @@ export default function PAge() {
         </div>
       </div>
       {/* Creative solution */}
-      <div className="grid grid-cols-3 my-10 gap-8">
+      <div className="grid grid-cols-3 my-10 gap-8 ps-10 lg:ps-24">
         <div className="flex justify-center flex-col col-span-2">
           <h3 className="text-[3rem] font-bold">
             <span className="text-[var(--main)]">{t('creative')} </span>
@@ -124,7 +123,7 @@ export default function PAge() {
           <span className="text-[var(--main)]">{t('work')}</span>
         </h4>
         <p className="w-3/4 mx-auto">{t('our_work_desc')}</p>
-        <Button href="/portfolio" variant="foldable" className="my-10">{t('view_full_portfolio')}</Button>
+        <Button href="/portfolio" variant="foldable" className="my-10 hover:w-40">{t('view_full_portfolio')}</Button>
         <h3 className="text-8xl font-bold w-3/5 mx-auto flex justify-center items-center flex-wrap">
           <span className="text-[var(--main)]">{t("we're")}</span>
           {t('crafting')}
@@ -162,7 +161,6 @@ export default function PAge() {
       <h3 className="text-8xl font-bold w-4/5 mx-auto flex justify-center items-center flex-wrap my-10">{t('we_driven_by_creative')}
         <span className="text-[var(--main)]">{t('partners')}</span>
       </h3>
-      <ContactForm />
     </>
   );
 }

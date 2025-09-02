@@ -10,6 +10,7 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SelectGroup, SelectLabel } from "@radix-ui/react-select";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 import Swal from 'sweetalert2';
 import { z } from "zod";
@@ -17,25 +18,26 @@ import { Button } from "./ui/button";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
 const ContactForm = () => {
-    const t = useTranslations()
+    const t = useTranslations('form')
+    const common = useTranslations()
 
     const formSchema = z.object({
         fullName: z.string().min(2, {
-            message: t("form.full_name_min"),
+            message: t('your_name_min'),
         }),
         phoneNumber: z
             .string()
             .min(6, {
-                message: t("form.phone_min"),
+                message: t('phone_min'),
             })
             .regex(/^\+(\d{1,3})[-\s]?(\d{6,12})$/, {
-                message: t("form.phone_format"),
+                message: t('phone_format'),
             }),
         email: z.string().email({
-            message: t("form.invalid_email"),
+            message: t('invalid_email'),
         }),
         projectType: z.string().min(2, {
-            message: t("form.company_name_min"),
+            message: t('company_name_min'),
         }),
     });
 
@@ -63,8 +65,9 @@ const ContactForm = () => {
         });
         Toast.fire({
             icon: "success",
-            title: t('contact_message')
+            title: common('contact_message')
         });
+        form.reset()
     }
 
 
@@ -73,15 +76,15 @@ const ContactForm = () => {
             <div className="container mx-auto lg:p-6 !text-white">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                        <div className="grid md:grid-cols-2 gap-8 p-3">
-                            <div className="flex flex-col gap-10 text-3xl font-bold">
+                        <div className="grid md:grid-cols-2 gap-20 p-3 relative pb-40">
+                            <div className="flex flex-col gap-10 text-3xl font-bold me-16">
                                 <FormField
                                     control={form.control}
                                     name="fullName"
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormControl>
-                                                <Input placeholder={t('form.full_name')} {...field} />
+                                                <Input placeholder={t('your_name')} {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -93,7 +96,7 @@ const ContactForm = () => {
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormControl>
-                                                <Input placeholder={t('form.email')} {...field} />
+                                                <Input placeholder={t('email')} {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -105,7 +108,7 @@ const ContactForm = () => {
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormControl>
-                                                <Input placeholder={t('form.phone_number')} {...field} />
+                                                <Input placeholder={t('phone_number')} {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -117,18 +120,18 @@ const ContactForm = () => {
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormControl>
-                                                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                                <Select onValueChange={field.onChange} value={field.value}>
                                                     <SelectTrigger aria-invalid={!!form.formState.errors.projectType} >
-                                                        <SelectValue placeholder={t('form.project_type')} />
+                                                        <SelectValue placeholder={t('project_type')} />
                                                     </SelectTrigger>
                                                     <SelectContent>
                                                         <SelectGroup>
-                                                            <SelectLabel>{t('form.project_type')}</SelectLabel>
-                                                            <SelectItem value="two_d_animation">{t("project_types.two_d_animation")}</SelectItem>
-                                                            <SelectItem value="three_d_animation">{t("project_types.three_d_animation")}</SelectItem>
-                                                            <SelectItem value="media_production">{t("project_types.media_production")}</SelectItem>
-                                                            <SelectItem value="creative_solutions">{t("project_types.creative_solutions")}</SelectItem>
-                                                            <SelectItem value="film_making_production">{t("project_types.film_making_production")}</SelectItem>
+                                                            <SelectLabel>{t("project_type")}</SelectLabel>
+                                                            <SelectItem value="two_d_animation">{common("project_types.two_d_animation")}</SelectItem>
+                                                            <SelectItem value="three_d_animation">{common("project_types.three_d_animation")}</SelectItem>
+                                                            <SelectItem value="media_production">{common("project_types.media_production")}</SelectItem>
+                                                            <SelectItem value="creative_solutions">{common("project_types.creative_solutions")}</SelectItem>
+                                                            <SelectItem value="film_making_production">{common("project_types.film_making_production")}</SelectItem>
 
                                                         </SelectGroup>
                                                     </SelectContent>
@@ -142,11 +145,19 @@ const ContactForm = () => {
                                     type="submit"
                                     variant="link"
                                     size="lg"
+                                    className="justify-center"
                                 >
-                                    {t('submit')}
+                                    {common('submit')}
                                 </Button>
                             </div>
-                            <div>test</div>
+                            <div>
+                                <div className="w-1/2 mx-auto text-end">
+                                    <div className="text-7xl">{t('contact')}</div>
+                                    <div className="text-7xl relative after:absolute after:top-1/2 after:start-10 after:w-32 after:h-1 after:bg-white">{t('us')}</div>
+                                </div>
+                                <p className="mt-24 text-center">{t('description')}</p>
+                            </div>
+                            <Image src="/images/character.webp" className="absolute bottom-0 left-2/5" width={180} height={200} alt="Character" />
                         </div>
                     </form>
                 </Form>

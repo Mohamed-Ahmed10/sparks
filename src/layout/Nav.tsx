@@ -13,6 +13,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { MdGTranslate } from "react-icons/md";
 
@@ -25,17 +26,28 @@ export default function Nav() {
         { href: "/about-us", label: "about_us" },
         { href: "/contact-us", label: "contact_us" },
     ];
+    const [scrolled, setScrolled] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 400) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     const pathName = usePathname();
     const locale = useLocale();
 
     return (
         <>
             <nav
-                className="w-5/6 m-auto gap-4 sticky top-[4.89%] bottom-[82.61%]
-            bg-[rgba(252,252,252,0.25)] border border-[rgba(255,255,255,0.15)]
-            shadow-[0px_10px_24px_rgba(255,255,255,0.25)]
-        backdrop-blur-[17.5px] rounded-[70px] justify-between items-center px-2 py-4 flex max-lg:hidden"
+                className={`w-5/6 ms-[8%] gap-4 fixed top-[4.89%] border border-[rgba(255,255,255,0.15)] shadow-[0px_10px_24px_rgba(255,255,255,0.25)] backdrop-blur-[17.5px] rounded-[70px] justify-between items-center px-2 py-4 flex max-lg:hidden z-50 ${scrolled ? 'bg-[rgba(0,0,0,0.5)]' : 'bg-[rgba(252,252,252,0.25)]'}`}
             >
                 <Image src="/logo-2.webp" width={120} height={30} alt="Site logo" />
                 <ul className="flex gap-3 relative">
@@ -61,10 +73,10 @@ export default function Nav() {
                     </Button>
                 </div>
             </nav>
-            <nav className="hidden max-lg:block">
+            <nav className="hidden max-lg:block z-50">
                 <Sheet>
                     <SheetTrigger>
-                        <FaBars />
+                        <FaBars width={100} height={100} />
                     </SheetTrigger>
                     <SheetContent>
                         <SheetHeader>

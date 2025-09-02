@@ -79,15 +79,18 @@
         "copyright": "© 2025 Sparks Studio. All rights reserved."
     },
     "form": {
-        "full_name": "Full Name",
+        "description": "It all starts with a spark. Whether you have a script, a crazy idea, or just a vibe — drop us a message. We’re here to turn your thoughts into visual stories that move, engage, and inspire. Let’s create something unforgettable.",
+        "your_name": "Your Name",
         "email": "E-mail",
         "phone_number": "Phone Number",
-        "full_name_min": "Please enter your full name (at least 2 characters).",
+        "your_name_min": "Please enter your name (at least 2 characters).",
         "phone_min": "Phone number is too short.",
         "phone_format": "Include the country code (e.g. +20xxxxxxxxxx).",
         "invalid_email": "Enter a valid email address.",
         "company_name_min": "Please enter a valid company name (at least 2 characters).",
-        "project_type": "Project type"
+        "project_type": "Project type",
+        "contact": "Contact",
+        "us": "Us"
     },
     "contact_message": "Your message has been sent successfully!",
     "submit": "Submit",
