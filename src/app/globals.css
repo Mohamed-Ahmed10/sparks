@@ -84,8 +84,8 @@
   --second-font: #eeeaea;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
-
-  color: var(--black-color);
+  --bg: #f8f8f8;
+  --color: var(--black-color);
 }
 
 .dark {
@@ -127,7 +127,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[var(--bg)] text-foreground;
   }
 }
 

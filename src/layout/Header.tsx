@@ -14,7 +14,7 @@ export default function Header() {
     }, [pathname]);
 
     return (
-        <header className="bg-[linear-gradient(135deg,rgba(232,48,48,0.45)_0%,rgba(232,48,48,0)_100%),url('/videos/header-bg.gif')] bg-no-repeat bg-cover w-full p-4">
+        <header className="bg-[linear-gradient(135deg,rgba(232,48,48,0.45)_0%,rgba(232,48,48,0)_100%),url('/videos/header-bg.gif')] bg-no-repeat bg-cover w-full p-4 max-h-[100vh] lg:pt-24">
             <Nav />
             {
                 pathname === '/' &&

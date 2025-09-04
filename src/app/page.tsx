@@ -55,7 +55,7 @@ export default function Page() {
         </div>
 
         {/* Services Title */}
-        <h2 className="text-center mx-auto w-11/12 lg:w-3/4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black">
+        <h2 className="text-center mx-auto w-11/12 lg:w-3/4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           <span className="text-[var(--main)]">{t("our_services")} </span>
           {t("where_meet")}
         </h2>

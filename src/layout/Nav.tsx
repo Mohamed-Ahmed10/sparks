@@ -47,7 +47,7 @@ export default function Nav() {
     return (
         <>
             <nav
-                className={`w-5/6 ms-[8%] gap-4 fixed top-[4.89%] border border-[rgba(255,255,255,0.15)] shadow-[0px_10px_24px_rgba(255,255,255,0.25)] backdrop-blur-[17.5px] rounded-[70px] justify-between items-center px-2 py-4 flex max-lg:hidden z-50 ${scrolled ? 'bg-[rgba(0,0,0,0.5)]' : 'bg-[rgba(252,252,252,0.25)]'}`}
+                className={`w-5/6 ms-[8%] gap-4 fixed top-8 border border-[rgba(255,255,255,0.15)] shadow-[0px_10px_24px_rgba(255,255,255,0.25)] backdrop-blur-[17.5px] rounded-[70px] justify-between items-center px-2 py-4 flex max-lg:hidden z-50 ${scrolled ? 'bg-[rgba(0,0,0,0.5)]' : 'bg-[rgba(252,252,252,0.25)]'}`}
             >
                 <Image src="/logo-2.webp" width={120} height={30} alt="Site logo" />
                 <ul className="flex gap-3 relative">

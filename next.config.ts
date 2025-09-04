@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
     images: {
-        domains: ['boost-lab-bucket.s3.amazonaws.com'],
+        unoptimized: true
     },
 };;
 

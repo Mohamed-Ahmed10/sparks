@@ -3,6 +3,8 @@
     "back_to_home": "Back to home",
     "sparks": "Sparks",
     "show_more": "Show more",
+    "send_request": "Send request",
+    "view_full_portfolio": "View Full Portfolio",
     "nav": {
         "home": "Home",
         "portfolio": "Portfolio",
@@ -100,5 +102,151 @@
         "media_production": "Media Production",
         "creative_solutions": "Creative Solutions",
         "film_making_production": "Film Making & Production"
+    },
+    "services": {
+        "how": "How",
+        "we": "We",
+        "bring": "Bring Your Vision to",
+        "life": "Life ! ",
+        "benefits_desc": "From concept to screen - here's how we carefully craft each project with creativity,precision, and passion.",
+        "frames_of_our": "Frames of Our ",
+        "work": "Work",
+        "frames_desc": "Take a glimpse into our creative world — a curated collection of animations, visuals, and stories we've proudly brought to life. Each project reflects our passion, precision, and unique touch.",
+        "last_desc": "Drop us a message and let’s create something amazing together.",
+        "2d_animation": {
+            "red_title": "2D ",
+            "black_title": "Vedio production",
+            "description": "We bring your stories to life through captivating 2D animation. Whether it's an explainer video, a short film, or a brand narrative — our creative team blends illustration, motion, and sound design to deliver impactful visual storytelling.",
+            "items": [
+                {
+                    "title": "Concept & Script Development",
+                    "description": "We kick off by transforming raw ideas into compelling scripts that align with your brand message and audience."
+                },
+                {
+                    "title": "Storyboard Creation",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Character & Background Design",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Animation & Motion",
+                    "description": "The real magic happens here — we animate scenes with smooth transitions, expressive movements, and dynamic timing."
+                },
+                {
+                    "title": "Sound & Final Production",
+                    "description": "We enhance the video with sound effects, music, and final polish to deliver a complete, engaging piece."
+                }
+            ]
+        },
+        "3d_animation": {
+            "red_title": "3D ",
+            "black_title": "Vedio production",
+            "description": "At Sparks, we don’t just animate — we sculpt, light, and breathe life into every frame. Our 3D video production service combines artistic precision with cinematic storytelling to deliver visually stunning, immersive experiences that leave a lasting impact.",
+            "items": [
+                {
+                    "title": "Concept & Script Development",
+                    "description": "We kick off by transforming raw ideas into compelling scripts that align with your brand message and audience."
+                },
+                {
+                    "title": "Storyboard Creation",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Character & Background Design",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Animation & Motion",
+                    "description": "The real magic happens here — we animate scenes with smooth transitions, expressive movements, and dynamic timing."
+                },
+                {
+                    "title": "Sound & Final Production",
+                    "description": "We enhance the video with sound effects, music, and final polish to deliver a complete, engaging piece."
+                }
+            ]
+        },
+        "media_production": {
+            "red_title": "Media",
+            "black_title": "Production",
+            "description": "At Sparks, our media Production service is built to turn ideas into polished visual content - from concept to final cut. Whether it’s branded videos, corporate films, or commercial shoots, we handle every aspect od the process with cinematic quality, attention eo detail, and a strong narrative that speaks to your audience across all platforms.",
+            "items": [
+                {
+                    "title": "Concept & Script Development",
+                    "description": "We kick off by transforming raw ideas into compelling scripts that align with your brand message and audience."
+                },
+                {
+                    "title": "Storyboard Creation",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Character & Background Design",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Animation & Motion",
+                    "description": "The real magic happens here — we animate scenes with smooth transitions, expressive movements, and dynamic timing."
+                },
+                {
+                    "title": "Sound & Final Production",
+                    "description": "We enhance the video with sound effects, music, and final polish to deliver a complete, engaging piece."
+                }
+            ]
+        },
+        "creative_solutions": {
+            "red_title": "Creative",
+            "black_title": "Solutions",
+            "description": "Our Creative Solutions go beyond design - we help brands shape their identity, craft compelling messages, and stands out in a crowded market. From concept development to campaign execution, we bring innovative ideas tailored to your goals, your audience, and your story. ",
+            "items": [
+                {
+                    "title": "Concept & Script Development",
+                    "description": "We kick off by transforming raw ideas into compelling scripts that align with your brand message and audience."
+                },
+                {
+                    "title": "Storyboard Creation",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Character & Background Design",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Animation & Motion",
+                    "description": "The real magic happens here — we animate scenes with smooth transitions, expressive movements, and dynamic timing."
+                },
+                {
+                    "title": "Sound & Final Production",
+                    "description": "We enhance the video with sound effects, music, and final polish to deliver a complete, engaging piece."
+                }
+            ]
+        },
+        "film_making_production": {
+            "red_title": "Film",
+            "black_title": "Making",
+            "description": "At Sparks, film is more than just visuals - it’s emotion, connection, and unforgettable storytelling. From scripting and shooting to post-production, we dwliver cimematic experiences that resonate with audiences and bring your brand’s narrative to life.",
+            "items": [
+                {
+                    "title": "Concept & Script Development",
+                    "description": "We kick off by transforming raw ideas into compelling scripts that align with your brand message and audience."
+                },
+                {
+                    "title": "Storyboard Creation",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Character & Background Design",
+                    "description": "We visualize the key scenes through detailed storyboards that map out the sequence, transitions, and mood."
+                },
+                {
+                    "title": "Animation & Motion",
+                    "description": "The real magic happens here — we animate scenes with smooth transitions, expressive movements, and dynamic timing."
+                },
+                {
+                    "title": "Sound & Final Production",
+                    "description": "We enhance the video with sound effects, music, and final polish to deliver a complete, engaging piece."
+                }
+            ]
+        }
     }
 }

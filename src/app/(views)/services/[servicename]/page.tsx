@@ -1,17 +1,17 @@
-
 import { allowedServices } from "@/lib/interfaces/services"
 import { notFound } from "next/navigation"
+import ServiceClient from "./ServiceClient"
 
+// This is a server component
 export default async function Page({
     params,
 }: {
-    params: Promise<{ servicename: '2d-animation' | '3d-animation' | 'media-production' | 'creative-solutions' | 'film-making-production' }>
+    params: { servicename: '2d-animation' | '3d-animation' | 'media-production' | 'creative-solutions' | 'film-making-production' }
 }) {
-    const { servicename } = await params
-    console.log(servicename)
+    const { servicename } = params
 
     if (!allowedServices.includes(servicename)) { notFound() }
     return (
-        <div>this  {servicename}</div>
+        <ServiceClient servicename={servicename} />
     )
 }
