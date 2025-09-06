@@ -1,4 +1,4 @@
-import { Gasoek_One, Sora, Space_Grotesk } from "next/font/google";
+import { Anton, Gasoek_One, Sora, Space_Grotesk } from "next/font/google";
 
 const gasoek = Gasoek_One({
     weight: "400",
@@ -18,7 +18,13 @@ const space = Space_Grotesk({
     display: "swap",
 });
 
+const anton = Anton({
+    weight: "400",
+    subsets: ["latin"],
+    display: "swap",
+});
 
 export const gasoekClass = gasoek.className;
 export const soraClass = sora.className;
 export const spaceClass = space.className;
+export const antonClass = anton.className;

@@ -1,5 +1,6 @@
 "use client";
 import ContactForm from "@/components/ContactForm";
+import { antonClass, spaceClass } from "@/lib/fonts";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -45,12 +46,12 @@ export default function Footer() {
             <div className="relative grid grid-cols-1 md:grid-cols-5 gap-10 z-10">
                 <div className="col-span-2">
                     <Image src="/logo-2.png" width={250} height={100} alt={t("logoAlt")} />
-                    <p className="mt-4 text-lg font-semibold text-white leading-relaxed">
+                    <p className={`mt-4 text-lg font-semibold text-white leading-relaxed ${spaceClass}`}>
                         {t("description")}
                     </p>
                 </div>
                 <div>
-                    <h5 className="font-bold text-2xl mb-3">{t("services.title")}</h5>
+                    <h5 className={`font-bold text-2xl mb-3 ${antonClass}`}>{t("services.title")}</h5>
                     <ul className="space-y-2 text-sm text-white">
                         <li><Link href="/services/2d-animation">{t("services.items.2d")}</Link></li>
                         <li><Link href="/services/3d-animation">{t("services.items.3d")}</Link></li>
@@ -60,7 +61,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h5 className="font-bold text-2xl mb-3">{t("company.title")}</h5>
+                    <h5 className={`font-bold text-2xl mb-3 ${antonClass}`}>{t("company.title")}</h5>
                     <ul className="space-y-2 text-sm text-white">
                         <li><Link href="/">{t("company.items.home")}</Link></li>
                         <li><Link href="/about-us">{t("company.items.about")}</Link></li>
@@ -70,7 +71,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h5 className="font-bold text-2xl mb-3">{t("follow.title")}</h5>
+                    <h5 className={`font-bold text-2xl mb-3 ${antonClass}`}>{t("follow.title")}</h5>
                     <div className="flex space-x-4 mb-6">
                         <FaFacebookF className="hover:text-white cursor-pointer" />
                         <FaVimeoV className="hover:text-white cursor-pointer" />

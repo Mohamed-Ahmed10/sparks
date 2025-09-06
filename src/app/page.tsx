@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { antonClass, spaceClass } from "@/lib/fonts";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -37,11 +38,11 @@ export default function Page() {
             className="w-full"
           />
           <div className="flex justify-center flex-col text-center lg:text-left">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h3 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ${antonClass}`}>
               {t("at")}
               <span className="text-[var(--main)]"> {common("sparks")}</span>
             </h3>
-            <p className="mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p className={`mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl ${spaceClass}`}>
               {t("at_sparks_desc")}
             </p>
             <Button
@@ -55,7 +56,7 @@ export default function Page() {
         </div>
 
         {/* Services Title */}
-        <h2 className="text-center mx-auto w-11/12 lg:w-3/4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        <h2 className={`text-center mx-auto w-11/12 lg:w-3/4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl ${antonClass}`}>
           <span className="text-[var(--main)]">{t("our_services")} </span>
           {t("where_meet")}
         </h2>
@@ -69,11 +70,11 @@ export default function Page() {
             height={500}
           />
           <div className="flex justify-center flex-col col-span-2 text-center">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h3 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ${antonClass}`}>
               <span className="text-[var(--main)]">{t("2d_video")} </span>
               {t("production")}
             </h3>
-            <p className="mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p className={`mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl ${spaceClass}`}>
               {t("2d_desc")}
             </p>
             <div className="flex justify-center">
@@ -91,11 +92,11 @@ export default function Page() {
         {/* 3D Video production */}
         <div className="grid grid-cols-3 my-10 gap-8 ps-0 lg:ps-24">
           <div className="flex justify-center flex-col col-span-2 text-center">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h3 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ${antonClass}`}>
               <span className="text-[var(--main)]">{t("3d_video")} </span>
               {t("production")}
             </h3>
-            <p className="mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p className={`mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl ${spaceClass}`}>
               {t("3d_desc")}
             </p>
             <div className="flex justify-center">
@@ -127,11 +128,11 @@ export default function Page() {
             height={600}
           />
           <div className="flex justify-center flex-col col-span-2 text-center">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h3 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ${antonClass}`}>
               <span className="text-[var(--main)]">{t("media")} </span>
               {t("production")}
             </h3>
-            <p className="mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p className={`mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl ${spaceClass}`}>
               {t("media_desc")}
             </p>
             <div className="flex justify-center">
@@ -149,11 +150,11 @@ export default function Page() {
         {/* Creative solution */}
         <div className="grid grid-cols-3 my-10 gap-8 ps-0 lg:ps-24">
           <div className="flex justify-center flex-col col-span-2 text-center">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h3 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ${antonClass}`}>
               <span className="text-[var(--main)]">{t("creative")} </span>
               {t("solutions")}
             </h3>
-            <p className="mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p className={`mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl ${spaceClass}`}>
               {t("at_sparks_desc")}
             </p>
             <div className="flex justify-center">
@@ -185,11 +186,11 @@ export default function Page() {
             height={600}
           />
           <div className="flex justify-center flex-col col-span-2 text-center">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h3 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ${antonClass}`}>
               <span className="text-[var(--main)]">{t("film")} </span>
               {t("making")}
             </h3>
-            <p className="mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p className={`mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl ${spaceClass}`}>
               {t("media_desc")}
             </p>
             <div className="flex justify-center">
@@ -206,11 +207,11 @@ export default function Page() {
 
         {/* Portfolio */}
         <div className="text-center font-semibold">
-          <h4 className="text-xl sm:text-2xl md:text-3xl">
+          <h4 className={`text-xl sm:text-2xl md:text-3xl ${antonClass}`}>
             {t("frames_of_our")}
             <span className="text-[var(--main)]">{t("work")}</span>
           </h4>
-          <p className="w-11/12 lg:w-3/4 mx-auto text-base sm:text-lg md:text-xl">
+          <p className={`w-11/12 lg:w-3/4 mx-auto text-base sm:text-lg md:text-xl ${spaceClass}`}>
             {t("our_work_desc")}
           </p>
           <Button
@@ -220,7 +221,7 @@ export default function Page() {
           >
             {t("view_full_portfolio")}
           </Button>
-          <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-11/12 lg:w-3/5 mx-auto flex justify-center items-center flex-wrap">
+          <h3 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-11/12 lg:w-3/4 mx-auto flex justify-center items-center flex-wrap leading-20 ${antonClass}`}>
             <span className="text-[var(--main)]">{t("we're")}</span>
             {t("crafting")}
             {t("visual_sparks")}
@@ -260,7 +261,7 @@ export default function Page() {
       </div>
 
       {/* Creative Partners */}
-      <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-11/12 lg:w-4/5 mx-auto flex justify-center items-center flex-wrap my-10 text-center">
+      <h3 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-11/12 lg:w-4/5 mx-auto flex justify-center items-center flex-wrap my-10 text-center ${antonClass}`}>
         {t("we_driven_by_creative")}
         <span className="text-[var(--main)] ms-2">{t("partners")}</span>
       </h3>

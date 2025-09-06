@@ -1,10 +1,12 @@
+import { soraClass } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import Link from "next/link"
 import type * as React from "react"
+
 const buttonVariants = cva(
-  "inline-flex items-center text-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none font-bold ",
+  `inline-flex items-center text-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none font-bold ${soraClass}`,
   {
     variants: {
       variant: {

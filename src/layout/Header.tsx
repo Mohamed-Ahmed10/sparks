@@ -1,5 +1,6 @@
 "use client";
 import { Button } from '@/components/ui/button';
+import { antonClass } from '@/lib/fonts';
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
@@ -20,7 +21,7 @@ export default function Header() {
                 pathname === '/' &&
                 <div className='my-20'>
                     <div className='container mx-auto lg:p-6 mt-32'>
-                        <h1 className='text-7xl font-black flex flex-col uppercase'>
+                        <h1 className={`ext-7xl font-black flex flex-col uppercase ${antonClass}`}>
                             <span className='text-gradient'>{t('sparks')}</span>
                             <span className='text-white ps-10'>{t('motion')}</span>
                         </h1>

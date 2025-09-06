@@ -7,6 +7,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import { spaceClass } from "@/lib/fonts";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SelectGroup, SelectLabel } from "@radix-ui/react-select";
 import { useTranslations } from "next-intl";
@@ -155,7 +156,7 @@ const ContactForm = () => {
                                     <div className="text-7xl">{t('contact')}</div>
                                     <div className="text-7xl relative after:absolute after:top-1/2 after:start-10 after:w-32 after:h-1 after:bg-white">{t('us')}</div>
                                 </div>
-                                <p className="mt-24 text-center">{t('description')}</p>
+                                <p className={`mt-24 text-center ${spaceClass}`}>{t('description')}</p>
                             </div>
                             <Image src="/images/character.webp" className="absolute bottom-0 left-2/5" width={200} height={220} alt="Character" />
                         </div>
