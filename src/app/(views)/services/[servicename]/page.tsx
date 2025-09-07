@@ -8,7 +8,7 @@ export default async function Page({
 }: {
     params: { servicename: '2d-animation' | '3d-animation' | 'media-production' | 'creative-solutions' | 'film-making-production' }
 }) {
-    const { servicename } = params
+    const { servicename } = await params
 
     if (!allowedServices.includes(servicename)) { notFound() }
     return (

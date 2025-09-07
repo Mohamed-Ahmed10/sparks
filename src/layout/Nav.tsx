@@ -2,6 +2,14 @@
 import setLanguageAction from "@/actions/set-language-actions";
 import { Button } from "@/components/ui/button";
 import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger
+} from "@/components/ui/navigation-menu";
+import {
     Sheet,
     SheetContent,
     SheetDescription,
@@ -54,14 +62,31 @@ export default function Nav() {
                     {navItems.map((item, i) => {
                         const isActive = item.href === pathName;
                         return (
-                            <li key={i} className="relative">
-                                <Link
-                                    href={item.href}
-                                    className={`px-3 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out ${isActive ? "bg-[var(--main)]/50 text-white shadow-md" : "text-white/70 hover:text-white"}
-                                    `}
-                                >
-                                    {t(item.label)}
-                                </Link>
+                            <li key={i} className="relative flex">
+                                {
+                                    item.label == 'about_us' ?
+                                        <NavigationMenu>
+                                            <NavigationMenuList>
+                                                <NavigationMenuItem>
+                                                    <NavigationMenuTrigger>{t(item.label)}</NavigationMenuTrigger>
+                                                    <NavigationMenuContent>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/about-us">{t(item.label)}</Link></NavigationMenuLink>
+                                                        <NavigationMenuLink asChild>
+                                                            <Link href="/our-team">{t('our_team')}</Link></NavigationMenuLink>
+                                                    </NavigationMenuContent>
+                                                </NavigationMenuItem>
+                                            </NavigationMenuList>
+                                        </NavigationMenu>
+                                        :
+                                        <Link
+                                            href={item.href}
+                                            className={`px-3 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out ${isActive ? "bg-[var(--main)]/50 text-white shadow-md" : "text-white/70 hover:text-white"}
+                                            `}
+                                        >
+                                            {t(item.label)}
+                                        </Link>
+                                }
                             </li>
                         );
                     })}
