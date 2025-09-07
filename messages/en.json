@@ -249,5 +249,13 @@
                 }
             ]
         }
+    },
+    "about": {
+        "meet": "Meet",
+        "the_sparks": "The sparks",
+        "behind": "Behind",
+        "the_magic": "The magic",
+        "our_team_desc": "We’re not just creatives — we’re collaborators, dreamers, and doers. Together, we make the spark shine brighter.",
+        "our_team_p": "Drop us a message and let’s create something amazing together."
     }
 }
