@@ -12,7 +12,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         link: "rounded-full hover:shadow-[0px_1px_20px_0px_#fff] text-[var(--color-white)] cursor-pointer bg-[var(--main)] text-white shadow-md",
-        foldable: "rounded-full bg-[var(--main)] hover:after:w-full transition-all w-10 hover:w-28 transition-all duration-300 ease-in-out font-bold text-center"
+        foldable: "rounded-full bg-[var(--main)] hover:after:w-full transition-all w-10 hover:w-28 transition-all duration-300 ease-in-out font-bold text-center",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

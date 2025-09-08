@@ -1,13 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
 import { antonClass, soraClass, spaceClass } from "@/lib/fonts";
 import { kebabToSnake } from "@/lib/kebebToSnake";
 import { animate, motion, useInView, useMotionValue, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-
 const items = [
     { id: 1, src: "/images/testProject.png", category: "creative-solutions" },
     { id: 2, src: "/images/testProject.png", category: "creative-solutions" },
@@ -19,6 +25,39 @@ const items = [
     { id: 8, src: "/images/testProject.png", category: "creative-solutions" },
     { id: 9, src: "/images/testProject.png", category: "film-making-production" },
 ];
+const testimonials = [
+    {
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aspernatur explicabo pariatur veritatis officiis id quibusdam vel.",
+        personName: "Mohamed",
+        country: "Egypt",
+    },
+    {
+        text: "Great experience working with the team. They delivered on time and exceeded expectations with their creativity and professionalism.",
+        personName: "Sarah",
+        country: "United Arab Emirates",
+    },
+    {
+        text: "The communication was smooth and the results were outstanding. I would definitely recommend them for future projects.",
+        personName: "John",
+        country: "USA",
+    },
+    {
+        text: "Professional, creative, and reliable. They understood our needs perfectly and provided tailored solutions.",
+        personName: "Amina",
+        country: "Morocco",
+    },
+    {
+        text: "Their work brought our ideas to life in the best way possible. The whole process was seamless and enjoyable.",
+        personName: "David",
+        country: "UK",
+    },
+    {
+        text: "Excellent service and attention to detail. They turned complex requirements into a simple, effective outcome.",
+        personName: "Layla",
+        country: "Saudi Arabia",
+    },
+];
+
 function Counter({ from = 0, to }: { from?: number; to: number }) {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true });
@@ -127,13 +166,26 @@ export default function Page() {
                     <span className="text-[var(--main)]">{t('impact')} </span>
                 </h2>
 
-
+                <Carousel className="my-28">
+                    <CarouselContent>
+                        {testimonials.map((opinion, index) =>
+                            <CarouselItem key={index} className="lg:basis-1/3">
+                                <div className="border-2 border-black rounded-lg p-6">
+                                    <p className="font-medium">{opinion.text}</p>
+                                    <div className="text-center font-bold mt-6">{opinion.personName}, {opinion.country}</div>
+                                </div>
+                            </CarouselItem>
+                        )}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                </Carousel>
                 <h2 className={`text-center mx-auto w-11/12 lg:w-3/4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-10 ${antonClass}`}>
                     <span className="mx-2">{t('let_the')}</span>
                     <span className="text-[var(--main)]">{t('numbers')} </span>
                     <span className="mx-2">{t('speak')}</span>
                 </h2>
-                <p className={`mt-6 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl text-center ${spaceClass}`}>{t('desc')}</p>
+                <p className={`my-10 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl text-center ${spaceClass}`}>{t('desc')}</p>
             </div>
             <div className={`bg-[#f3f1f1] py-10 ${soraClass}`}>
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">

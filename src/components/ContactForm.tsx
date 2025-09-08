@@ -152,13 +152,13 @@ const ContactForm = () => {
                                 </Button>
                             </div>
                             <div className="bg-[url('/images/contact_bg.webp')] bg-contain bg-no-repeat bg-center">
-                                <div className="w-1/2 mx-auto text-end">
-                                    <div className="text-7xl">{t('contact')}</div>
-                                    <div className="text-7xl relative after:absolute after:top-1/2 after:start-10 after:w-32 after:h-1 after:bg-white">{t('us')}</div>
+                                <div className="lg:w-1/2 mx-auto lg:text-end flex lg:flex-col gap-4">
+                                    <div className="lg:text-7xl text-4xl">{t('contact')}</div>
+                                    <div className="lg:text-7xl text-4xl max-md:text-center relative lg:after:absolute after:top-1/2 after:start-10 after:w-32 after:h-1 after:bg-white">{t('us')}</div>
                                 </div>
                                 <p className={`mt-24 text-center ${spaceClass}`}>{t('description')}</p>
                             </div>
-                            <Image src="/images/character.webp" className="absolute bottom-0 left-2/5" width={200} height={220} alt="Character" />
+                            <Image src="/images/character.webp" className="absolute bottom-0 left-2/5 max-md:hidden" width={200} height={220} alt="Character" />
                         </div>
                     </form>
                 </Form>
