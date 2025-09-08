@@ -8,7 +8,7 @@ const Page = () => {
     return (
         <>
             <div className="container mx-auto lg:p-6 text-center">
-                <h1 className={`text-5xl font-black my-16 capitalize [word-spacing:0.5rem ${antonClass}`}>
+                <h1 className={`text-5xl font-black my-16 capitalize ${antonClass}`}>
                     <span className="mx-2">{t('meet')}</span>
                     <span className="text-[var(--main)]">{t('the_sparks')} </span>
                     <span className="mx-2">{t('behind')} </span>

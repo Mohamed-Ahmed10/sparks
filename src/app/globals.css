@@ -85,7 +85,7 @@
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --bg: #f8f8f8;
-  --color: var(--black-color);
+  --gradient-layer: #e8303040;
 }
 
 .dark {

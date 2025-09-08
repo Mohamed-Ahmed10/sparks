@@ -98,6 +98,7 @@
     "contact_message": "Your message has been sent successfully!",
     "submit": "Submit",
     "project_types": {
+        "show_all": "Show all",
         "two_d_animation": "2D Animation",
         "three_d_animation": "3D Animation",
         "media_production": "Media Production",
@@ -266,5 +267,23 @@
         "our_story_desc": "At Sparks, we’re storytellers at heart. We turn ideas into visuals that inspire and connect. From 2D and 3D animation to voice-overs and VFX, every frame is crafted with passion and purpose. Whether you’re a brand, an agency, or a creator, we’re here to bring your vision to life. Let’s create something unforgettable together.",
         "the_principles": "The Principles",
         "we_animate_by": "We Animate By"
+    },
+    "portfolio": {
+        "title": "Discover our most recent artistic",
+        "visuals": "visuals!",
+        "voices": "Voices",
+        "that_matter": "That Matter",
+        "real": "Real",
+        "words": "impact.",
+        "impact": "words.",
+        "let_the": "Let the",
+        "numbers": "Numbers",
+        "speak": "Speak",
+        "desc": "Every frame , every story - built on impact",
+        "desc2": "Drop us a message and let’s create something amazing together.",
+        "projects": "Successful Projects Delivered",
+        "industries": "Industries We’ve Crafted For",
+        "hours": "Hours of Creative Production",
+        "satisfaction": "Client Satisfaction Rate"
     }
 }

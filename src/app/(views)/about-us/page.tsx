@@ -12,7 +12,7 @@ export default function Page() {
                 <div className="grid lg:grid-cols-2 gap-20 max-lg:justify-items-center">
                     <Image src="/images/about/about.webp" width={400} height={600} alt="About sparks" />
                     <div className="text-center">
-                        <h1 className={`text-5xl font-black my-16 capitalize [word-spacing:0.5rem ${antonClass}`}>
+                        <h1 className={`text-5xl font-black my-16 capitalize ${antonClass}`}>
                             <span className="mx-2">{t('we')}</span>
                             <span className="text-[var(--main)]">{t('animate')} </span>,
                             <span className="mx-2">{t('we')}</span>
