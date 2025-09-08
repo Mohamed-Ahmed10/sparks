@@ -221,13 +221,22 @@ export default function Page() {
           >
             {t("view_full_portfolio")}
           </Button>
-          <h3 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-11/12 lg:w-3/4 mx-auto flex justify-center items-center flex-wrap leading-20 ${antonClass}`}>
-            <span className="text-[var(--main)]">{t("we're")}</span>
-            {t("crafting")}
-            {t("visual_sparks")}
-            {t("that_bring")}
-            <span className="text-[var(--main)]">{t("stories")}</span>
-            {t("to_life")}
+          <h3 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-3/4 lg:w-3/4 mx-auto flex justify-center items-center flex-wrap leading-20 ${antonClass}`}>
+            <span className="text-[var(--main)] mx-2">{t("we're")}</span>
+            {t('crafting')}
+            <span className="inline-block h-14 w-14 mx-2 rounded-sm bg-[radial-gradient(50%_50%_at_50%_50%,#0D0D0D_0%,#3D0404_100%)] mt-4 relative group">
+              <Image src="/images/samples/1.webp" width={500} height={500} alt="Sample" className="absolute -top-1/2 -left-1/2 z-50 opacity-0 group-hover:opacity-100 transition-all duration-500 max-w-52" />
+            </span>
+            {t('visual_sparks')}
+            <span className="inline-block h-14 w-14 mx-2 rounded-sm bg-[radial-gradient(50%_50%_at_50%_50%,#0D0D0D_0%,#3D0404_100%)] mt-4 relative group">
+              <Image src="/images/samples/2.webp" width={500} height={500} alt="Sample" className="absolute -top-1/2 -left-1/2 z-50 opacity-0 group-hover:opacity-100 transition-all duration-500 max-w-52" />
+            </span>
+            {t('that_bring')}
+            <span className="inline-block h-14 w-14 mx-2 rounded-sm bg-[radial-gradient(50%_50%_at_50%_50%,#0D0D0D_0%,#3D0404_100%)] mt-4 relative group">
+              <Image src="/images/samples/3.webp" width={500} height={500} alt="Sample" className="absolute -top-1/2 -left-1/2 z-50 opacity-0 group-hover:opacity-100 transition-all duration-500 max-w-52" />
+            </span>
+            <span className="text-[var(--main)] mx-2">{t("stories")}</span>
+            {t('to_life')}
           </h3>
         </div>
       </div>
