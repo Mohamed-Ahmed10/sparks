@@ -30,7 +30,7 @@ export default function Nav() {
     const navItems = [
         { href: "/", label: "home" },
         { href: "/portfolio", label: "portfolio" },
-        { href: "/our-services", label: "our_services" },
+        { href: "/services/2d-animation", label: "our_services" },
         { href: "/about-us", label: "about_us" },
         { href: "/contact-us", label: "contact_us" },
     ];
@@ -98,6 +98,7 @@ export default function Nav() {
                     </Button>
                 </div>
             </nav>
+            {/***************************************** Mobile nav *****************************************/}
             <nav className="hidden max-lg:block z-50">
                 <Sheet>
                     <SheetTrigger>
@@ -107,31 +108,42 @@ export default function Nav() {
                         <SheetHeader>
                             <SheetTitle>Sparks studios</SheetTitle>
                             <SheetDescription className="pt-12">
-                                <span className="flex justify-center">
-                                    <Image src="/logo-2.webp" width={120} height={30} alt="Site logo" />
-                                </span>
-                                <ul className="flex flex-col items-center gap-5 my-8 relative">
+                                <Image src="/logo-2.webp" width={120} height={30} alt="Site logo" />
+                                <ul className="flex flex-col gap-5 my-8 relative">
                                     {navItems.map((item, i) => {
                                         const isActive = item.href === pathName;
                                         return (
                                             <li key={i} className="relative">
-                                                <Link
-                                                    href={item.href}
-                                                    className={`px-3 py-2 rounded-full font-semibold transition-all duration-700 ease-in-out ${isActive ? "text-[var(--main)]" : ""}
-                                    `}
-                                                >
-                                                    {t(item.label)}
-                                                </Link>
+                                                {
+                                                    item.label == 'about_us' ?
+                                                        <NavigationMenu>
+                                                            <NavigationMenuList>
+                                                                <NavigationMenuItem>
+                                                                    <NavigationMenuTrigger className="text-inherit">{t(item.label)}</NavigationMenuTrigger>
+                                                                    <NavigationMenuContent>
+                                                                        <NavigationMenuLink asChild>
+                                                                            <Link href="/about-us">{t(item.label)}</Link></NavigationMenuLink>
+                                                                        <NavigationMenuLink asChild>
+                                                                            <Link href="/our-team">{t('our_team')}</Link></NavigationMenuLink>
+                                                                    </NavigationMenuContent>
+                                                                </NavigationMenuItem>
+                                                            </NavigationMenuList>
+                                                        </NavigationMenu>
+                                                        :
+                                                        <Link
+                                                            href={item.href}
+                                                            className={`px-3 py-2 rounded-full font-semibold transition-all duration-700 ease-in-out ${isActive ? "text-[var(--main)]" : ""}`}>
+                                                            {t(item.label)}
+                                                        </Link>
+                                                }
                                             </li>
                                         );
                                     })}
                                 </ul>
-                                <div className="flex justify-center gap-4">
-                                    <MdGTranslate className="text-white w-8 h-8 cursor-pointer" onClick={() => setLanguageAction(locale === 'en' ? 'ar' : 'en')} />
-                                    <Button variant="link" href="/git-in-touch">
-                                        {t('git_in_touch')}
-                                    </Button>
-                                </div>
+                                <MdGTranslate className="text-white w-8 h-8 cursor-pointer" onClick={() => setLanguageAction(locale === 'en' ? 'ar' : 'en')} />
+                                <Button variant="link" href="/git-in-touch">
+                                    {t('git_in_touch')}
+                                </Button>
                             </SheetDescription>
                         </SheetHeader>
                     </SheetContent>
