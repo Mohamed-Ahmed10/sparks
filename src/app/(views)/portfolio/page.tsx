@@ -170,7 +170,7 @@ export default function Page() {
                     <CarouselContent>
                         {testimonials.map((opinion, index) =>
                             <CarouselItem key={index} className="lg:basis-1/3">
-                                <div className="border-2 border-black rounded-lg p-6">
+                                <div className="border-2 border-black rounded-lg p-6 h-full">
                                     <p className="font-medium">{opinion.text}</p>
                                     <div className="text-center font-bold mt-6">{opinion.personName}, {opinion.country}</div>
                                 </div>
